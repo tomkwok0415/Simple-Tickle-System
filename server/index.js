@@ -8,7 +8,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-const mongoUrl = "mongodb+srv://tantan:tantantan@4350project.8t5onnr.mongodb.net/test";
+const mongoUrl = "YOURS_MONGODB_CONNECTION_STRING";
 
 mongoose.connect(mongoUrl)
   .then(() => {
